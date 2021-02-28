@@ -21,3 +21,4 @@ ggplot(md2,aes(x=Date_f)) + geom_bar(aes(fill=factor(Pod)),position="stack") + l
 md2$Date <- as.Date(md2$Date)
 ggplot(md2,aes(x=Date)) + geom_bar(aes(y = (..count..)/sum(..count..))) + stat_ecdf(geom = "step", pad = FALSE) + labs(title ="Sampled Percentage by Month and The Cumulative Plot") + theme(plot.title = element_text(hjust = 0.5))
 
+p2
